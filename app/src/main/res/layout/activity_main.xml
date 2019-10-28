@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/lov"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="198dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/tof"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_vertical|center_horizontal|fill_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal|fill_horizontal"
+        android:orientation="horizontal"
+        android:textSize="20dp">
+
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:background="#fbeae6e2"
+            android:onClick="decrement"
+            android:text="-"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            tools:ignore="OnClick" />
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal|clip_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#fbeae6e2"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="80sp" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal|fill_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#fbeae6e2"
+            android:onClick="increment"
+            android:text="+"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitOrder_button"
+        android:layout_width="186dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="70dp"
+        android:background="#fbeae6e2"
+        android:onClick="submitOrder"
+        android:text="Order"
+        android:textSize="40dp"
+        android:textColor="@android:color/black"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="120dp"
+        android:background="#fbeae6e2"
+        android:text="$ 50"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/price_text_view"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="110dp"
+        android:background="#fbeae6e2"
+        android:text="   0.00"
+        android:textColor="@android:color/white"
+        android:textSize="35sp" />
+
+
+</LinearLayout>
